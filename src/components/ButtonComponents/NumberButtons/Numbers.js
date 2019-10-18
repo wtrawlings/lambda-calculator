@@ -7,8 +7,8 @@ import { numbers } from "../../../data";
 
 const Numbers = () => {
   // STEP 2 - add the imported data to state
-  //Warren: setState is tracking the activity inside numberState and setNumberState for changes
-  //Warren: So what is numbers inside the argument at setState?
+  ////Warren: setState is tracking the activity inside numberState and setNumberState for changes
+  ////Warren: So what is numbers inside the argument at setState?
   const [numberState, setNumberState] = setState(numbers);
 
   return (

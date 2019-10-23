@@ -5,7 +5,7 @@ import NumberButton from "./NumberButton";
 //Import your array data to from the provided data file
 import { numbers } from "../../../data";
 
-const Numbers = () => {
+const Numbers = props => {
   // STEP 2 - add the imported data to state
   ////Warren: setState is tracking the activity inside numberState and setNumberState for changes
   ////Warren: So what is numbers inside the argument at setState? The original array?
@@ -17,7 +17,12 @@ const Numbers = () => {
        component matching the name on the provided file. Pass
        it any props needed by the child component*/}
       {data.map((number, index) => (
-        <NumberButton number={number} key={index} />
+        <NumberButton
+          number={number}
+          key={index}
+          display={props.display}
+          setDisplay={props.setDisplay}
+        />
       ))}
     </div>
   );
